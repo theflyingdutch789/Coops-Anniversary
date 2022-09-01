@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coops Anniversary</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="heading">
+        <h1 class="mainHeading">Celebrating My Coop's Anniversary</h1>
+        <hr class="grey">
+    </div>
+    <div class="grid-container">
+        <div class="item grid-1"><img class="product-img" src="1.jfif"></div>
+        <div class="item grid-2">
+            <i class="fa fa-calendar-o" style="font-size:24px"></i><br>
+            <span class="printAdjust">Validity Text.</span>
+            <hr class="grey">
+            <b>En: Till 3rd July</b>
+            <br>
+            <b>Ar: حتى ٣ يوليو</b>
+        </div>
+        <div class="item grid-3">
+            <i class="fa fa-calendar" style="font-size:24px"></i><br>
+            <span class="printAdjust">Displayed Between</span>
+            <hr class="grey">
+            <b>21 June 2022</b>
+            <br>
+            <b>03 July 2022</b>
+        </div>
+        <div class="item grid-4">
+            <i class="fa fa-newspaper-o" style="font-size:24px"></i><br>
+            
+            <span>Total Pages</span><br>
+            <span class="bigText">52</span>
+        </div>
+        
+        <div class="item grid-5">
+            <i class="fa fa-folder-o" style="font-size:24px"></i><br>
+            <span>Total Products</span><br>
+            <span class="bigText">421</span>
+        </div>
+        <div class="item grid-6 products">
+            <h3 class="greyProductColor">Product Categories</h3>
+            <span class="orangeDot greyProductColor"></span><span class="boldText">Foods 65%</span><br>
+            <span class="purpleDot greyProductColor"></span><span class="boldText">Dept Store 5%</span><br>
+            <span class="blueDot greyProductColor"></span><span class="boldText">Electronics 15%</span><br>
+            <span class="greenDot greyProductColor"></span><span class="boldText">Grocery 10%</span><br>
+            <span class="lightGreenDot greyProductColor"></span><span class="boldText">Others 10%</span>   
+        </div>
+        <div class="item grid-7 ">
+            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+        </div>
+        <div class="item grid-8 ">
+            <i class="fa fa-clock-o"  style="font-size:36px" ></i><br>
+            <span class="averageText">Average Time (s)</span>
+            
+            <span class="averageTimeSpend">48.325s</span>
+            <i class="fa fa-users"  style="font-size:36px" ></i><br>
+            <span class="averageText">Total Visitors</span>
+            <h2 class="averageUsers">221130</h2>
+            <span class="averageText">United Arab Emirates</span>
+        </div>
+    </div>
+    <div class="productIndex">
+        <div class="prodItems">
+            <h4>Foods</h4>
+            <div class="prodFlex">
+                <div>
+                    <span class="prodDetails">1 Cleaning</span><br>
+                    <span class="prodDetails">2 Diary, Deli and Egg </span><br>
+                    <span class="prodDetails">3 Health and Beauty</span><br>
+                    <span class="prodDetails">4 Chicken</span><br>
+                    <span class="prodDetails">5 Groceries</span><br>
+                    <span class="prodDetails">6 Paper and Disposables</span><br>
+                    <span class="prodDetails">7 Bakes and Nuts</span><br>
+                    <span class="prodDetails">8 Drinks</span><br>
+                    <span class="prodDetails">9 Sweets and Icecreams</span><br>
+                    <span class="prodDetails">10 Gifts and toys</span><br>
+                    <span class="prodDetails">11 Fruits</span><br>
+                    <span class="prodDetails">12 Fish</span><br>
+                    <span class="prodDetails">13 Accessories</span><br>
+                    <span class="prodDetails">14 Meat</span>  <br>
+                    <span class="prodDetails">15 Baby Diapers</span><br>
+                    <span class="prodDetails">16 Baby Needs</span>
+                </div>
+                <div class="divider">
+                    <span class="tabSpace">72</span><br>
+                    <span class="tabSpace">49</span><br>
+                    <span class="tabSpace">47</span><br>
+                    <span class="tabSpace">46</span><br>
+                    <span class="tabSpace">35</span><br>
+                    <span class="tabSpace">34</span><br>
+                    <span class="tabSpace">18</span><br>
+                    <span class="tabSpace">15</span><br>
+                    <span class="tabSpace">14</span><br>
+                    <span class="tabSpace">13</span><br>
+                    <span class="tabSpace">09</span><br>
+                    <span class="tabSpace">09</span><br>
+                    <span class="tabSpace">09</span><br>
+                    <span class="tabSpace">09</span><br>
+                    <span class="tabSpace">07</span><br>
+                    <span class="tabSpace">06</span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="prodItems">
+            <h4>Dept Store</h4>
+            <div class="prodFlex">
+                <div>
+                    <span class="prodDetails">1 Cleaning</span><br>
+                    <span class="prodDetails">2 Diary, Deli and Egg </span><br>
+                    <span class="prodDetails">3 Health and Beauty</span><br>
+                    <span class="prodDetails">4 Chicken</span><br>
+                    <span class="prodDetails">5 Groceries</span><br>
+                    <span class="prodDetails">6 Paper and Disposables</span><br>
+                    <span class="prodDetails">7 Bakes and Nuts</span><br>
+                    <span class="prodDetails">8 Drinks</span><br>
+                    <span class="prodDetails">9 Sweets and Icecreams</span><br>
+                    <span class="prodDetails">10 Gifts and toys</span><br>
+                    <span class="prodDetails">11 Fruits</span><br>
+                    <span class="prodDetails">12 Fish</span><br>
+                    <span class="prodDetails">13 Accessories</span><br>
+                    <span class="prodDetails">14 Meat</span>  <br>
+                    <span class="prodDetails">15 Baby Diapers</span><br>
+                    <span class="prodDetails">16 Baby Needs</span><br>
+                    <span class="prodDetails">17 Baby Needs</span><br>
+                    <span class="prodDetails">18 Tea & Coffee</span><br>
+                    <span class="prodDetails">19 Rice</span><br>
+                    <span class="prodDetails">20 Frozen Foods</span><br>
+                    <span class="prodDetails">21 Milk</span>
+                </div>
+                <div class="divider">
+                    <span class="tabSpace">72</span><br>
+                    <span class="tabSpace">49</span><br>
+                    <span class="tabSpace">47</span><br>
+                    <span class="tabSpace">46</span><br>
+                    <span class="tabSpace">35</span><br>
+                    <span class="tabSpace">34</span><br>
+                    <span class="tabSpace">18</span><br>
+                    <span class="tabSpace">15</span><br>
+                    <span class="tabSpace">14</span><br>
+                    <span class="tabSpace">13</span><br>
+                    <span class="tabSpace">09</span><br>
+                    <span class="tabSpace">09</span><br>
+                    <span class="tabSpace">09</span><br>
+                    <span class="tabSpace">09</span><br>
+                    <span class="tabSpace">07</span><br>
+                    <span class="tabSpace">06</span><br>
+                    <span class="tabSpace">34</span><br>
+                    <span class="tabSpace">18</span><br>
+                    <span class="tabSpace">15</span><br>
+                    <span class="tabSpace">14</span><br>
+                    <span class="tabSpace">02</span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="prodItems">
+            <h4>Electronics</h4>
+            <div class="prodFlex">
+                <div>
+                    <span class="prodDetails">1 Cleaning</span><br>
+                    <span class="prodDetails">2 Diary, Deli and Egg </span><br>
+                    <span class="prodDetails">3 Health and Beauty</span><br>
+                    <span class="prodDetails">4 Chicken</span><br>
+                    <span class="prodDetails">5 Groceries</span><br>
+                    <span class="prodDetails">6 Paper and Disposables</span><br>
+                    <span class="prodDetails">7 Bakes and Nuts</span><br>
+                </div>
+                <div class="divider" >
+                    <span class="tabSpace">72</span><br>
+                    <span class="tabSpace">49</span><br>
+                    <span class="tabSpace">47</span><br>
+                    <span class="tabSpace">46</span><br>
+                    <span class="tabSpace">35</span><br>
+                    <span class="tabSpace">34</span><br>
+                    <span class="tabSpace">18</span><br>
+                </div>
+            </div>
+            
+        </div>
+        <div class="prodItems">
+            <h4>Others</h4>
+            <div class="prodFlex">
+                <div>
+                    <span class="prodDetails">1 Cleaning</span><br>
+                    <span class="prodDetails">2 Diary, Deli and Egg </span><br>
+                    <span class="prodDetails">3 Health and Beauty</span><br>
+                    <span class="prodDetails">4 Chicken</span><br>
+                    <span class="prodDetails">5 Groceries</span><br>
+                    <span class="prodDetails">6 Paper and Disposables</span><br>
+                    <span class="prodDetails">7 Bakes and Nuts</span><br>
+                    <span class="prodDetails">8 Drinks</span><br>
+                    <span class="prodDetails">9 Sweets and Icecreams</span><br>
+                    <span class="prodDetails">10 Gifts and toys</span><br>
+                    <span class="prodDetails">11 Fruits</span><br>
+                    <span class="prodDetails">12 Fish</span><br>
+                    <span class="prodDetails">13 Accessories</span><br>
+                    <span class="prodDetails">14 Meat</span>  <br>
+                    <span class="prodDetails">15 Baby Diapers</span><br>
+                    <span class="prodDetails">16 Baby Needs</span><br>
+                    <span class="prodDetails">17 Baby Needs</span><br>
+                    <span class="prodDetails">18 Tea & Coffee</span><br>
+                    <span class="prodDetails">19 Rice</span><br>
+                    <span class="prodDetails">20 Frozen Foods</span><br>
+                    <span class="prodDetails">21 Milk</span>
+                </div>
+                <div class="divider">
+                    <span class="tabSpace">72</span><br>
+                    <span class="tabSpace">49</span><br>
+                    <span class="tabSpace">47</span><br>
+                    <span class="tabSpace">46</span><br>
+                    <span class="tabSpace">35</span><br>
+                    <span class="tabSpace">34</span><br>
+                    <span class="tabSpace">18</span><br>
+                    <span class="tabSpace">15</span><br>
+                    <span class="tabSpace">14</span><br>
+                    <span class="tabSpace">13</span><br>
+                    <span class="tabSpace">09</span><br>
+                    <span class="tabSpace">09</span><br>
+                    <span class="tabSpace">09</span><br>
+                    <span class="tabSpace">09</span><br>
+                    <span class="tabSpace">07</span><br>
+                    <span class="tabSpace">06</span><br>
+                    <span class="tabSpace">34</span><br>
+                    <span class="tabSpace">18</span><br>
+                    <span class="tabSpace">15</span><br>
+                    <span class="tabSpace">14</span><br>
+                    <span class="tabSpace">02</span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="prodItems">
+            <h4>Foods</h4>
+            <div class="prodFlex">
+                <div>
+                    <span class="prodDetails">1 Diapers</span><br>
+                    <span class="prodDetails">2 Baby Needs </span><br>
+                    <span class="prodDetails">3 Small Appliances</span><br>
+                    <span class="prodDetails">4 Tea and Coffee</span><br>
+                    <span class="prodDetails">5 Rice</span><br>
+                    <span class="prodDetails">6 Frozen Foods</span><br>
+                    <span class="prodDetails">7 Milk</span><br>
+                    <span class="prodDetails">8 Vegs</span><br>
+                    <span class="prodDetails">9 Oil and Ghee</span><br>
+                    <span class="prodDetails">10 Home Needs</span><br>
+                    <span class="prodDetails">11 Personal Gadgets</span><br>
+                </div>
+                <div>
+                    <span class="tabSpace">72</span><br>
+                    <span class="tabSpace">49</span><br>
+                    <span class="tabSpace">47</span><br>
+                    <span class="tabSpace">46</span><br>
+                    <span class="tabSpace">35</span><br>
+                    <span class="tabSpace">34</span><br>
+                    <span class="tabSpace">18</span><br>
+                    <span class="tabSpace">15</span><br>
+                    <span class="tabSpace">14</span><br>
+                    <span class="tabSpace">13</span><br>
+                    <span class="tabSpace">09</span><br>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <footer>
+        <div class="flex-container">
+            <div>
+                <img class="img-d4d" src="logo.webp ">
+            </div>
+            <div>
+                <a class="d4dLink" href="http://d4donline.com">www.d4donline.com</a>
+            </div>
+            <div>
+                <img class="storeLink" src="playstore.png">
+            </div>
+            <div>
+                <img class="storeLink" src="appstore.png">
+            </div>
+            <div>
+                <img class="storeLink" src="huawei-ic.png">
+            </div>
+            <div>
+                <a class="d4dLink" href="http://d4donline.com">For more details contact <span class="blueText">support@d4donline.com</span></a>
+            </div>
+            
+        </div>
+    </footer>
+
+
+    <script>
+        var xValues = [];
+        var yValues = [65, 5, 15, 10, 10];
+        var barColors = [
+          "#ff7823",
+          "#8e30ff",
+          "#0263ff",
+          "#4c9e80",
+          "#01c42e"
+        ];
+        
+        new Chart("myChart", {
+          type: "pie",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+            title: {
+              display: false,
+              
+            }
+          }
+        });
+        </script>
+</body>
+</html>

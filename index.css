@@ -1,0 +1,318 @@
+body{
+    
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0rem 10rem;
+    font-family: 'Poppins';
+    overflow: scroll;
+}
+.heading{
+    text-align: center;
+}
+.grid-container{
+    position: relative;
+    right: 4rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, calc(100%/3));
+    min-width: 0;
+    /* justify-content: start;
+    align-items: start; */
+    column-gap: 10px;   
+    /* gap: 8px; */
+    /* grid-auto-rows: minmax(100px,auto); */
+}
+
+.item{
+    padding: 20px;
+}
+.item:nth-of-type(1){
+    padding-top: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;  
+}
+.item:nth-of-type(2){
+    border-radius: 5px;
+    border: #c2c2c2 0.5px solid;
+}
+.item:nth-of-type(3){
+    border-radius: 5px;
+    border: 	#c2c2c2 0.5px solid;   
+}
+.item:nth-of-type(6){
+   justify-self: center ;
+}
+.src-img{
+    height: 200px;
+    width: 200px;
+}
+.grey{
+    background-color: #ffffff;
+    border: none;
+    border-top: 1px solid #d7d6d7;
+    /* height: 1px; */
+}
+.product-img{
+    
+    height: 280px;
+    width: 220px;
+    border-radius: 10px;
+}
+
+.products{
+    text-align: left;
+    
+}
+.productIndex{
+    padding-top: 1rem;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, calc((100%/5)));
+    min-width: 0;
+    border-top: 1px solid black;
+    position: relative;
+   
+}
+.prodItems{ 
+    
+    text-align: left;
+    justify-self: center;
+    
+    
+    /* display: grid;
+    grid-template-columns: 90% 10%; */
+    
+}
+
+.prodDetails{
+    font-size: 10px;
+}
+.tabSpace{
+    font-size: 10px;
+    tab-size: 20;
+    
+}
+.prodFlex{
+    display: grid;
+    grid-template-columns: 90% 10%;
+    column-gap: 10px;
+}
+.orangeDot {
+    height: 18px;
+    width: 18px;
+    margin-right: 1rem;
+    background-color: #ff7823;
+    position: relative;
+    top: 0.125rem;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .purpleDot {
+    height: 18px;
+    width: 18px;
+    margin-right: 1rem;
+    background-color: #8e30ff;
+    position: relative;
+    top: 0.125rem;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .blueDot {
+    height: 18px;
+    width: 18px;
+    margin-right: 1rem;
+    background-color: #0263ff;
+    position: relative;
+    top: 0.125rem;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .greenDot {
+    height: 18px;
+    width: 18px;
+    margin-right: 1rem;
+    background-color: #4c9e80;
+    position: relative;
+    top: 0.125rem;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .lightGreenDot {
+    height: 18px;
+    width: 18px;
+    margin-right: 1rem;
+    background-color: #01c42e;
+    position: relative;
+    top: 0.125rem;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .sep:before {
+    content: '';
+    height: 40px;
+    position: relative;
+    border-left: 1px solid black;
+  }
+  .bigText{
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .timeText{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 200px;
+  }
+  .smallText{
+    font-size: 0.8rem;
+  }
+
+  @media print {
+    body{
+     padding: 0.5rem 1rem;
+     border: black 1px solid;
+     min-height: 100vh;
+     margin: 0mm;
+    }
+    #myChart{
+     position: relative;
+     right: 5rem;
+     top: 1.8rem;
+     
+     
+    }
+    .grid-container{
+        position: block;
+        left: 0;
+    }
+    .item:nth-of-type(2){
+        width: 150px; 
+        margin-left: 1.2rem;
+    }
+    .item:nth-of-type(3){
+        width: 150px; 
+        
+    }
+    .greenDot{
+        background-color: #01c42e!important;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+    .blueDot{
+        background-color: #0263ff;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+    .purpleDot{
+        background-color: #8e30ff;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+    .lightGreenDot{
+        background-color: #4c9e80;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+    .orangeDot{
+        background-color: #ff7823;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+    .printAdjust{
+        font-size: 0.9rem;
+    }
+    .prodDetails{
+        font-size: 8px;
+        padding: 0;
+        margin: 0;
+    }
+    .tabSpace{
+        font-size: 8px;
+    }
+    .mainHeading{
+        padding: 0;
+        margin: 0;
+        margin-top: 0.5rem;
+    }
+    .d4dLink{
+        font-size: 10px;
+        text-align: left;
+        margin: 0;
+        margin-left: 0.2rem;
+    }
+    .storeLink{
+        margin-top: 0.25rem;
+        height: 20px!important;
+    }
+  }
+  .boldText{
+    font-weight: bold;
+  }
+.divider::after{
+    position: absolute;
+    margin-left: 1rem ;
+    content: '';
+    height: 100%;
+    width: 1px;
+    /* background: black; */
+    border-left: 1px solid black;
+    top: 0;
+}
+.greyProductColor{
+    color: #545454;
+}
+.averageTimeSpend{
+    padding: 0.7rem;
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+}
+.averageText{
+    font-size: 0.8rem;
+}
+.averageUsers{
+    padding-top: 0.8rem;
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: bold;
+    display: block;
+}
+.grid-8::before{
+    position: absolute;
+    content: "";
+    height: 45%;
+    width: 1px;
+    background: rgb(255, 255, 255);
+    right: 32.2%;
+    border-left: 1px solid rgb(112,112,112);
+}
+.grid-5::before{
+    position: absolute;
+    content: "";
+    height: 20%;
+    width: 0px;
+    background: rgb(255, 255, 255);
+    right: 32.2%;
+    border-left: 2px dotted rgb(135,135,135);
+}
+.flex-container{
+    padding-top: 1rem;
+    display: flex;
+}
+.img-d4d{
+    width: 30px;
+    height: 30px;
+    justify-self: center;
+}
+.d4dLink{
+    color: #8e8e8e;
+    text-decoration: none;
+    margin-left: 1rem;
+    justify-self: center;
+}
+.storeLink{
+    height: 30px;
+    margin-left: 0.9rem;
+}
+.blueText{
+    color: #53217a;
+}
